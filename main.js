@@ -104,7 +104,7 @@ const updateValue=function(array,index,value){
         if(index>array.length-1){
             return 'there is no element to updated in this index'
         }
-        array.splice(index,0,value);
+        array.splice(index,1,value);
         return array;
 }
 const onlyString=function(array){
