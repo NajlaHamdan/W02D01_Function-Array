@@ -96,8 +96,8 @@ const addToArray=function(array,string){
     return array;
 }
 
-const convertToString=function(array,char){
-
+const convertToString=function(array){
+    return array.join(" ");
 }
 
 const updateValue=function(array,index,value){
@@ -117,7 +117,18 @@ const onlyString=function(array){
 }
 
 const login=function(username,password){
-
+    const users = [
+        ["Jane", "123456" ],
+        ["admin", "abc123" ],
+      ];
+    if(username==users[0][0] && password==users[0][1]){
+        return "Login Successful";
+    }
+    else if(username==users[1][0] && password==users[1][1]){
+        return "Login Successful";
+    }else{
+        return "Login Failed";
+    }
 }
 const maximumNumber=function(numbers){
     max=0;
